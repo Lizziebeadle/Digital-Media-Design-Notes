@@ -1,0 +1,30 @@
+Segues
+
+What is a segue
+transiitioning/navigating to a new view controller
+
+What is a segue identifier?
+name you seque promatically
+
+How do you create segue from a button?
+ctrl and drag to new view controller, press create show
+
+
+How do you create from a view controller without a button?
+in storyboard drag yellow icon view controller to the new view controller and press show
+
+What is the method to perfrom a segue called and what argument does it take?
+perform sequa with idenitifier. 
+
+What method is called immediatly before a segue is performed?
+prepare for segue
+
+How do you assign a new view controller class?
+idenity inspector- created class 
+
+How do you pass data between two view controllers? (this will need a few sentances to explain)
+ctrl and drag
+
+You dont link a segue "backwards", why?
+have to link otherwise you will keep creating new view controllers
+
