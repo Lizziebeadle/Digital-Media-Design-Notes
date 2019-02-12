@@ -1,0 +1,48 @@
+
+Adding a MapView and Annotations to your project:
+Import MapKit
+Display mapView
+Add an annotation- MKAnnotations
+
+
+What does the Location Manager do?
+
+
+How do you create a new file?
+import MapKit
+class CustomAnnotation: NSObject, MKAnnotation {
+}
+CLLocationCoordinate2D- needs to be changed as map is a cooordinate
+
+
+Name the 2 types of a Custom Annotation class?
+- an annnotation object
+- an annotation view 
+
+What does CL stand for in CLLocationCoordinate2D?
+- alllows latitude and longitude to be specificied 
+
+Why do we create different files for different class objects?
+
+
+How do you add an annotation to the MapView?
+
+
+Finished Class
+
+import MapKit
+
+class CustomAnnotation: NSObject, MKAnnotation {
+
+var coordinate: CLLocationCoordinate2D
+var title: String?
+
+init(coordinate: CLLocationCoordinate2D, title: String) {
+self.coordinate = coordinate
+self.title = title
+}
+
+}
+
+
+
