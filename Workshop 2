@@ -1,0 +1,52 @@
+Creating a simple project:
+Create a class
+Set up two variables of different types
+Create a function
+
+How do you create a class - key word/casing/brackets?
+- provides a template/blueprint/design layout for your object.
+- use the keyword ‘class’ followed by the name of the class. (use an uppercase when naming your class)
+- space between curly brackets is where the properties and functions to do with that class are kept. 
+
+class Person {
+
+}
+
+What is the difference between a variable and a constant? 
+variable  'var' = an identifier with a value that can be changed during normal execution, i.e., the value is variable.
+The variable name= is of type string/characters
+The variable age= is of type integer/numbers
+constant 'let' = value that cannot be altered by the program during normal execution, i.e., the value is constant
+
+
+What must you do after creating a variable?
+methods= blocks of code that perfrom in specific task or functionality 
+
+
+What does the word 'string' mean?
+sequence of characters, either as a literal constant or as some kind of variable. The latter may allow its elements to be mutated and the length changed, or it may be fixed (after creation).
+String = Charcaters
+
+What key work (abreviation) is used to create a function?
+Functions 'func'= A set of brackets and then a set of curly braces which contains whatever we want to function to do.
+
+function print=
+func bio(){
+print("My name is \(self.name), I am \(self.age) from Bournemouth")
+
+}
+
+backslash and brackets= used in the print statement, take arguments/parameters. This function now accepts an argument of “name”. All this means is that when we call this function it's expecting a String to be passed to it which it can use, and it will be called name.
+
+What symbol means 'is of type'?
+‘:’
+
+What does 'Int' mean?
+Integer = (whole) Numbers
+
+How do you print out a variable or function in the debug area?
+
+
+Self= differentiate between the property ‘name’ and the parameter ‘name’.
+parameter name= is in the brackets after 'init'
+property name= is the variable you set at the beginning.
