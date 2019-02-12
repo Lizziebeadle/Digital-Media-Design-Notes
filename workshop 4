@@ -30,7 +30,7 @@ How do you add an annotation to the MapView?
 
 Finished Class
 
-import MapKit
+'''import MapKit
 
 class CustomAnnotation: NSObject, MKAnnotation {
 
@@ -44,5 +44,5 @@ self.title = title
 
 }
 
-
+'''
 
