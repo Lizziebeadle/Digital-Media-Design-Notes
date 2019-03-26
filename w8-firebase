@@ -1,0 +1,69 @@
+Firebase
+- collection of tools that make doing a lot of what might be complex things very straight forward.
+- It is developed and maintained by Google. 
+- always choose the white workplace
+
+cloud firestore (database)= place to store information in a server (computer)
+
+
+arrays= list
+dictionary= named square brackets
+
+step 1: write to database
+step 2: send 
+
+
+
+XCODE
+
+
+import UIKit
+import CoreLocation
+import Firebase
+import CoreLocation
+
+class ViewController: UIViewController {
+  
+    let locationManager = CLLocationManager ()
+    
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    locationManager.requestAlwaysAuthorization()
+    locationManager.delegate = self
+    locationManager.startUpdatingLocation()
+  
+    watch ()
+    
+  }
+ 
+    func save (location: CLLocation) {
+        let ref = Firestore.firestore().collection("locations").document("lbeadle")
+        let geoPoint = GeoPoint (latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        ref.setData (
+        ["location": geoPoint]
+        )
+    }
+    
+    //loading arrrays and live data
+    func watch ()  {
+        let ref = Firestore.firestore().collection("locations")
+        ref.addSnapshotListener { (snapshot, error) in
+            print(snapshot?.documents)
+
+        }
+        
+        
+    }
+    
+    
+    
+}
+
+extension ViewController: CLLocationManagerDelegate {
+   
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print(locations.last!)
+        save (location: locations.last!)
+    }
+}
